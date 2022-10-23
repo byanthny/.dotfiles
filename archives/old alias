@@ -1,0 +1,49 @@
+alias jhu="ssh adas22@ugradx.cs.jhu.edu"
+
+alias collegedir="cd Documents/College/Data\ Structures/cs226"
+
+alias compilec="gcc -std=c99 -Wall -Wextra -pedantic"
+
+alias compilecpp="g++ -std=c++11 -pedantic -Wall -Wextra"
+
+alias compilejava="javac -Xlint:all"
+
+alias checkstyle="java -jar ~/Documents/College/Data\ Structures/cs226/res/checkstyle-8.16-all.jar -c ~/Documents/College/D\
+ata\ Structures/cs226/res/cs226_checks.xml"
+
+HOMEBREW_EDITOR="/usr/bin/emacs"
+
+export JUNIT_HOME="$HOME/development/java"
+export PATH="$PATH:$JUNIT_HOME"
+export CLASSPATH="$CLASSPATH:$JUNIT_HOME/junit-4.12.jar:$JUNIT_HOME/hamcrest-core-1.3.jar"
+
+export PYTHONHOME="/Users/anthony/anaconda3/"
+export NRN_PYLIB="/Users/anthony/anaconda3/lib/libpython3.7m.dylib"
+
+alias jUnit="java -cp ~/development/java/*:. org.junit.runner.JUnitCore"
+
+alias minecraftServer="ssh pi@10.160.178.105"
+
+export PATH="$PATH:~/development/flutter/bin"
+
+export PYTHONPATH="/Applications/NEURON-7.7/nrn/lib/python":$PYTHONPATH #added by NEURON installer                          
+
+alias ipython="python -m IPython"
+
+alias jn="jupyter notebook"
+# >>> conda initialize >>>                                                                                                  
+# !! Contents within this block are managed by 'conda init' !!                                                              
+__conda_setup="$('/Users/anthony/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/anthony/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/anthony/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/anthony/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<                                                                                                  
+
+export PATH="/Users/anthony/anaconda3/bin:$PATH"
