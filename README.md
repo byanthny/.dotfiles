@@ -1,12 +1,17 @@
 # .dotfiles
 my config files and other setup related information.
 
-#dotfiles
-.config - neovim
-.zshrc - zsh shell setting
-setting.jsom - vscode settings
+## files
+- .gitconfig - git
+- init.vim - neovim
+- .zshrc - oh my zsh
+- .bash_profile - bash (using zsh now)
+- settings.json, keybindings.json - vscode
+- Brewfile - Homebrew dump
+- setup.sh - todo
+- /other - other application config files
 
-# applications
+# applications (do through homebrew when possible)
 ## general
 - spotify
 - apple music
@@ -16,24 +21,34 @@ setting.jsom - vscode settings
   - metamask
   - 1password
   - whatruns
-  - raindrop.io
-- raindrop.io
-- things3
+- things 3
 - standard notes
 - airtable
 - goodnotes
+- alttab (brew)
+- discord (brew)
+- magnet
+- bartender
+
 
 ## dev
-- vscode
+- vscode (see config file)
   - extensions:
   - github copilot
-  - 
-- iterm2 -> zsh shell -> neovim
-- zsh
-- neovim
+  - prettier
+  - eslint
+  - TODO: fill out
+- iterm2 -> zsh shell
+- zsh (see config file)
+- neovim (see config file)
 - postman
-- xcode if you have to
-- postman
+- xcode (because you have to)
 
 ## creative
+- adobe creative suite (photoshop, xd, lightroom)
+- davinci
+- abelton
+- fl studio
+
 ## data
+- last.fm
