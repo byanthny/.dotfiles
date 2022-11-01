@@ -2,12 +2,10 @@
 set background=dark
 set clipboard=unnamedplus
 set completeopt=noinsert,menuone,noselect
-set cursorline
 set hidden
 set inccommand=split
 set mouse=a
 set number
-set relativenumber
 set splitbelow splitright
 set title
 set ttimeoutlen=0
