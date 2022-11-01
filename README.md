@@ -1,5 +1,5 @@
-# .dotfiles
-[in progress] my config files and other setup related information. use at your own risk.
+# .dotfiles [in progress]
+my config files and other setup related information. use at your own risk.
 
 ## files
 - .gitconfig - git
