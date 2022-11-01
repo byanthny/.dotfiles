@@ -15,6 +15,7 @@
 - [ ] fill out extensions for vscode
 - [ ] fill out other applications
 - [ ] config neovim
+- [ ] work on zsh custom theme
 
 
 # applications (do through homebrew when possible)
