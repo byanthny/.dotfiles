@@ -23,7 +23,6 @@
   "window.zoomLevel": 1,
   "editor.inlineSuggest.enabled": true,
   "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
   "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "workbench.startupEditor": "none",
@@ -32,5 +31,10 @@
     "source.sortImports": true
   },
   "workbench.colorTheme": "Tokyo Night",
-  "liveServer.settings.donotShowInfoMsg": true
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.wordWrap": "on",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "cSpell.language": "en,lorem"
 }
