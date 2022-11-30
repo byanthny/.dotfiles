@@ -12,6 +12,4 @@ set ttimeoutlen=0
 set wildmenu
 
 " Tabs size
-set expandtab
-set shiftwidth=2
-set tabstop=2
+set autoindent expandtab shiftwidth=4 tabstop=4
