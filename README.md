@@ -1,5 +1,6 @@
-# .dotfiles [in progress]
-my config files and other setup related information. use at your own risk.
+# .dotfiles
+use at your own risk. 
+my config files and other setup related information.
 
 ## files
 - .gitconfig - git
@@ -12,7 +13,7 @@ my config files and other setup related information. use at your own risk.
 - /other - other application config files
 
 ## todo
-- [ ] fill out extensions for vscode
+- [X] fill out extensions for vscode
 - [ ] fill out other applications
 - [ ] config neovim
 - [ ] work on zsh custom theme
@@ -29,33 +30,31 @@ my config files and other setup related information. use at your own risk.
   - 1password
   - whatruns
 - things 3
-- standard notes
-- airtable
-- goodnotes
+- logseq
+  - plugins:
+  - TODO
+- goodnotes (moving to logseq?)
 - alttab (brew)
 - discord (brew)
 - magnet
 - bartender
 
-
 ## dev
 - vscode (see config file)
   - extensions:
   - github copilot
+  - gitlens
   - prettier
   - eslint
+  - wakatime (using self hosted server)
+  - auto rename tag
+  - headwind
+  - live server
+  - simple react snippets
+  - tailwind css
   - TODO: fill out
 - iterm2 -> zsh shell
 - zsh (see config file)
 - neovim (see config file)
 - postman
 - xcode (because you have to)
-
-## creative
-- adobe creative suite (photoshop, xd, lightroom)
-- davinci
-- abelton
-- fl studio
-
-## data
-- last.fm
