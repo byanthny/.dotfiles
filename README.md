@@ -6,7 +6,7 @@ my config files and other setup related information.
 - .gitconfig - git
 - init.vim - neovim
 - .zshrc - oh my zsh
-- .bash_profile & .bashrc - bash (using zsh now)
+- .bash_profile, .bashrc - bash (using zsh now)
 - settings.json, keybindings.json - vscode
 - Brewfile - Homebrew dump
 - setup.sh - todo
