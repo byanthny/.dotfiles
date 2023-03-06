@@ -48,9 +48,10 @@ my config files and other setup related information.
     - discord presence
     - gitignore
     - intellicode
-    - Materical Icon Theme (icon theme)
-    - Tokyo Night (main theme - dark)
     - word count
+    - **theme**
+      - Materical Icon Theme ( theme)
+      - Tokyo Night (main theme - dark)
   - extensions - project dependent:
     - astro
     - tailwind css
