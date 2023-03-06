@@ -8,6 +8,9 @@
   "latex-workshop.view.pdf.viewer": "tab",
   "latex-workshop.latex.autoClean.run": "onBuilt",
   "editor.suggestSelection": "first",
+  "editor.quickSuggestions": {
+        "strings": true
+  },
   "git.confirmSync": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[javascript]": {
