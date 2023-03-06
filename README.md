@@ -1,5 +1,6 @@
 # .dotfiles
 use at your own risk. 
+
 my config files and other setup related information.
 
 ## files
@@ -15,7 +16,7 @@ my config files and other setup related information.
 ## todo
 - [X] fill out extensions for vscode
 - [X] fill out other applications
-- [ ] user snippets setup
+- [X] user snippets setup
 - [ ] config neovim
 - [ ] work on zsh custom theme
 
