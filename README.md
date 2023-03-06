@@ -50,8 +50,8 @@ my config files and other setup related information.
     - intellicode
     - word count
     - **theme**
-      - Materical Icon Theme ( theme)
-      - Tokyo Night (main theme - dark)
+      - Materical Icon Theme
+      - Tokyo Night (dark)
   - extensions - project dependent:
     - astro
     - tailwind css
