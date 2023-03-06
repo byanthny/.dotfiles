@@ -66,7 +66,9 @@ my config files and other setup related information.
     - simple react snippets
     - gitpod/codepaces
     - latex workshop
-- iterm2 -> zsh shell
+- iterm2
+  - zsh shell
+  - TODO: add profile
 - zsh (see config file)
 - neovim (see config file)
 - postman
