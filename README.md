@@ -19,40 +19,52 @@ my config files and other setup related information.
 - [ ] work on zsh custom theme
 
 
-# applications (do through homebrew when possible)
-## general
-- spotify
-- apple music
+# "systems" related applications
 - 1password
 - brave browser
   - extensions:
   - metamask
   - 1password
   - whatruns
-- things 3
+- things3
 - logseq
-  - plugins:
-  - TODO
 - goodnotes (moving to logseq?)
 - alttab (brew)
-- discord (brew)
 - magnet
 - bartender
 
 ## dev
 - vscode (see config file)
-  - extensions:
-  - github copilot
-  - gitlens
-  - prettier
-  - eslint
-  - wakatime (using self hosted server)
-  - auto rename tag
-  - headwind
-  - live server
-  - simple react snippets
-  - tailwind css
-  - TODO: fill out
+  - extensions - general:
+    - github copilot
+    - gitlens
+    - prettier
+    - eslint
+    - wakatime (using self hosted server)
+    - auto rename tag
+    - live server
+    - simple react snippets
+    - spell checker
+    - discord presence
+    - gitignore
+    - intellicode
+    - Materical Icon Theme (icon theme)
+    - Tokyo Night (main theme - dark)
+    - word count
+  - extensions - project dependent:
+    - astro
+    - tailwind css
+    - headwind 
+    - css peek
+    - dart
+    - flutter
+    - go
+    - isort
+    - npm intellisense
+    - python
+    - simple react snippets
+    - gitpod/codepaces
+    - latex workshop
 - iterm2 -> zsh shell
 - zsh (see config file)
 - neovim (see config file)
