@@ -14,12 +14,13 @@ my config files and other setup related information.
 
 ## todo
 - [X] fill out extensions for vscode
-- [ ] fill out other applications
+- [X] fill out other applications
+- [ ] user snippets setup
 - [ ] config neovim
 - [ ] work on zsh custom theme
 
 
-# "systems" related applications
+# related applications (not exhaustive)
 - 1password
 - brave browser
   - extensions:
@@ -34,6 +35,12 @@ my config files and other setup related information.
 - bartender
 
 ## dev
+- iterm2
+  - zsh shell
+  - TODO: add profile
+- zsh (see config file)
+- neovim (see config file)
+- postman
 - vscode (see config file)
   - extensions - general:
     - github copilot
@@ -66,10 +73,4 @@ my config files and other setup related information.
     - simple react snippets
     - gitpod/codepaces
     - latex workshop
-- iterm2
-  - zsh shell
-  - TODO: add profile
-- zsh (see config file)
-- neovim (see config file)
-- postman
-- xcode (because you have to)
+- xcode - swift development (because you have to)
