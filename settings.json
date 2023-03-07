@@ -9,7 +9,7 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-},
+  },
   "javascript.updateImportsOnFileMove.enabled": "always",
   "files.exclude": {
     "**/.classpath": true,
@@ -51,8 +51,4 @@
   "editor.quickSuggestions": {
     "strings": true
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> ddf8edbfbf8926a6138f4a28c07294fa3d3e2d29
