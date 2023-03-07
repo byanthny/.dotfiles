@@ -17,6 +17,7 @@ my config files and other setup related information.
 - [X] fill out other applications
 - [X] user snippets setup
 - [X] add iterm profile
+- [ ] setup script
 - [ ] config neovim
 - [ ] work on zsh custom theme
 
