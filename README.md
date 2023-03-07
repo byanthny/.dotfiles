@@ -1,6 +1,4 @@
-# .dotfiles
-use at your own risk. 
-
+# .dotfiles [use at your own risk]
 my config files and other setup related information.
 
 ## files
@@ -11,12 +9,15 @@ my config files and other setup related information.
 - settings.json, keybindings.json - vscode
 - Brewfile - Homebrew dump
 - setup.sh - todo
+- iterm2_profile.json - iterm2
 - /other - other application config files
 
 ## todo
 - [X] fill out extensions for vscode
 - [X] fill out other applications
 - [X] user snippets setup
+- [X] add iterm profile
+- [ ] setup script
 - [ ] config neovim
 - [ ] work on zsh custom theme
 
@@ -28,6 +29,7 @@ my config files and other setup related information.
   - metamask
   - 1password
   - whatruns
+  - dark reader
 - things3
 - logseq
 - goodnotes (moving to logseq?)
@@ -38,7 +40,6 @@ my config files and other setup related information.
 ## dev
 - iterm2
   - zsh shell
-  - TODO: add profile
 - zsh (see config file)
 - neovim (see config file)
 - postman
