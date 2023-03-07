@@ -17,7 +17,6 @@
     "**/.settings": true,
     "**/.factorypath": true
   },
-  "window.zoomLevel": 1,
   "editor.inlineSuggest.enabled": true,
   "editor.formatOnPaste": true,
   "editor.fontFamily": "'Fira Code', monospace",
@@ -52,4 +51,8 @@
   "editor.quickSuggestions": {
     "strings": true
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ddf8edbfbf8926a6138f4a28c07294fa3d3e2d29

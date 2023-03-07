@@ -1,61 +1,77 @@
-# .dotfiles [in progress]
-my config files and other setup related information. use at your own risk.
+# .dotfiles
+use at your own risk. 
+
+my config files and other setup related information.
 
 ## files
 - .gitconfig - git
 - init.vim - neovim
 - .zshrc - oh my zsh
-- .bash_profile - bash (using zsh now)
+- ~~.bash_profile, .bashrc - bash~~ (using zsh now)
 - settings.json, keybindings.json - vscode
 - Brewfile - Homebrew dump
 - setup.sh - todo
 - /other - other application config files
 
 ## todo
-- [ ] fill out extensions for vscode
-- [ ] fill out other applications
+- [X] fill out extensions for vscode
+- [X] fill out other applications
+- [X] user snippets setup
 - [ ] config neovim
 - [ ] work on zsh custom theme
 
 
-# applications (do through homebrew when possible)
-## general
-- spotify
-- apple music
+# related applications (not exhaustive)
 - 1password
 - brave browser
   - extensions:
   - metamask
   - 1password
   - whatruns
-- things 3
-- standard notes
-- airtable
-- goodnotes
+- things3
+- logseq
+- goodnotes (moving to logseq?)
 - alttab (brew)
-- discord (brew)
 - magnet
 - bartender
 
-
 ## dev
-- vscode (see config file)
-  - extensions:
-  - github copilot
-  - prettier
-  - eslint
-  - TODO: fill out
-- iterm2 -> zsh shell
+- iterm2
+  - zsh shell
+  - TODO: add profile
 - zsh (see config file)
 - neovim (see config file)
 - postman
-- xcode (because you have to)
-
-## creative
-- adobe creative suite (photoshop, xd, lightroom)
-- davinci
-- abelton
-- fl studio
-
-## data
-- last.fm
+- vscode (see config file)
+  - extensions - general:
+    - github copilot
+    - gitlens
+    - prettier
+    - eslint
+    - wakatime (using self hosted server)
+    - auto rename tag
+    - live server
+    - simple react snippets
+    - spell checker
+    - discord presence
+    - gitignore
+    - intellicode
+    - word count
+    - **theme**
+      - Materical Icon Theme
+      - Tokyo Night (dark)
+  - extensions - project dependent:
+    - astro
+    - tailwind css
+    - headwind 
+    - css peek
+    - dart
+    - flutter
+    - go
+    - isort
+    - npm intellisense
+    - python
+    - simple react snippets
+    - gitpod/codepaces
+    - latex workshop
+- xcode - swift development (because you have to)
