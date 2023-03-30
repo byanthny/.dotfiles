@@ -46,9 +46,16 @@
     "*": true,
     "yaml": false,
     "plaintext": false,
-    "markdown": false
+    "markdown": true
   },
   "editor.quickSuggestions": {
     "strings": true
-  }
+  },
+  "git.ignoreRebaseWarning": true,
+  "vscord.status.problems.enabled": false,
+  "vscord.status.image.small.notInFile.text": "probably gave up...",
+  "vscord.status.image.small.idle.text": "Idling",
+  "vscord.status.idle.resetElapsedTime": true,
+  "vscord.status.details.text.notInFile": "no file",
+  "window.zoomLevel": 1
 }
