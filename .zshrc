@@ -116,6 +116,8 @@ source $ZSH/oh-my-zsh.sh
  alias zshconfig="sudo nvim ~/.zshrc"
  alias jn="jupyter notebook"
  alias cddev="cd ~/Developer/_projects/in\ progress/"
+ alias stop-amrpc="brew services stop apple-music-discord-rpc"
+ alias start-amrpc="brew services start apple-music-discord-rpc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export NVM_DIR="$HOME/.nvm"
