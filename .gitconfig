@@ -8,3 +8,5 @@
 	email = dev@anthnydas.com
 [core]
 	autocrlf = input
+[init]
+	defaultBranch = main
