@@ -29,20 +29,20 @@ to be used with gnu stow
 - [ ] config neovim
 - [ ] work on zsh custom theme
 
-# other useful applications (not exhaustive)
+## other useful applications (not exhaustive)
 
 - logseq
 - tick tick
 - brave
 - zed (testing)
 
-## Mac
+### Mac
 
 - alttab
 - magnet
 - bartender
 - iterm2
 
-## Windows
+### Windows
 
 - wsl
