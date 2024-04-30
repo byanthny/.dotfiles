@@ -24,10 +24,11 @@ to be used with gnu stow
 
 ## todo
 
-- [ ] gnu stow
+- [x] gnu stow
 - [ ] setup script, customized install (OS & scope specific)
 - [ ] config neovim
 - [ ] work on zsh custom theme
+- [ ] add windows and mac apps
 
 ## other useful applications (not exhaustive)
 
