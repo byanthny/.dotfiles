@@ -11,6 +11,12 @@ to be used with gnu stow
 - clone this repo
 - run setup.sh (todo)
 
+### ignoring local changes
+
+you can use `git update-index --skip-worktree <file-list>` to ignore changes to files that are being tracked by git (useful for different .gitconfig's)
+
+use `git update-index --no-skip-worktree <file-list>` to start tracking changes again.
+
 ## config files
 
 - .gitconfig - git
