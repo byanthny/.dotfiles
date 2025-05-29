@@ -26,7 +26,6 @@ use `git update-index --no-skip-worktree <file-list>` to start tracking changes 
 - vscode/settings.json, vscode/keybindings.json - vscode
 - Brewfile - Homebrew dump
 - iterm2_profile.json - iterm2
-- /archives - backups or old config files
 
 ## todo
 
@@ -34,22 +33,18 @@ use `git update-index --no-skip-worktree <file-list>` to start tracking changes 
 - [ ] setup script, customized install (OS & scope specific)
 - [ ] config neovim
 - [ ] work on zsh custom theme
-- [ ] add windows and mac apps
+- [ ] add links
 
-## other useful applications (not exhaustive)
+## useful tools
 
+- v0
+- perplexity
+- claude
+- vscode & copilot
 - logseq
 - tick tick
-- brave
-- zed (testing)
-
-### Mac
-
-- alttab
-- magnet
-- bartender
+- zen browser
+- figma
+- betaflight
 - iterm2
-
-### Windows
-
 - wsl
