@@ -6,8 +6,13 @@
 [user]
 	name = Anthony Das
 	email = dev@anthnydas.com
+	signingkey = /Users/tony/.ssh/id_ed25519.pub
 [core]
 	autocrlf = input
 	editor = vim
 [init]
 	defaultBranch = main
+[commit]
+	gpgsign = true
+[gpg]
+	format = ssh
