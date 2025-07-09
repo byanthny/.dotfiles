@@ -7,3 +7,5 @@
 /scripts
 
 \*.sh
+
+\.DS_Store
