@@ -6,15 +6,24 @@ to be used with gnu stow
 ## setup
 
 - install git, clone this repo into `~/.dotfiles`
-- run `./scripts/setup.sh`
+- run `bash scripts/setup.sh`
 
 The script installs Homebrew, oh-my-zsh, the `zsh-autosuggestions` plugin, the Brewfile packages, and Claude Code, then stows everything into `$HOME`.
 
-### ignoring local changes
+### per-machine overrides
 
-you can use `git update-index --skip-worktree <file-list>` to ignore changes to files that are being tracked by git (useful for different .gitconfig's)
+Two optional files let you customize per machine without editing the tracked dotfiles:
 
-use `git update-index --no-skip-worktree <file-list>` to start tracking changes again.
+- `~/.gitconfig.local` — overrides `[user]` email / signingkey
+- `~/.zshrc.local` — extra PATH exports, completions, anything machine-specific
+
+Both are sourced automatically if present, ignored if not. Create them only where needed:
+
+```
+git config --file ~/.gitconfig.local user.email "you@example.com"
+git config --file ~/.gitconfig.local user.signingkey "~/.ssh/id_ed25519.pub"
+echo 'export PATH="$HOME/some/bin:$PATH"' >> ~/.zshrc.local
+```
 
 ## config files
 

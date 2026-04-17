@@ -2,3 +2,6 @@
 .config/*
 
 !.config/nvim/
+
+# per-machine git identity (email + signingkey)
+.gitconfig.local
