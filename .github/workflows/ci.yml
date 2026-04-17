@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: shellcheck
-        run: find . -name '*.sh' -not -path './.git/*' -print0 | xargs -0 -r shellcheck
+        run: find . -name '*.sh' -not -path './.git/*' -print0 | xargs -0 -r shellcheck --severity=error
       - name: bash syntax
         run: find . -name '*.sh' -not -path './.git/*' -exec bash -n {} +
 
