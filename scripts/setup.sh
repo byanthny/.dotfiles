@@ -2,6 +2,7 @@
 # Bootstrap this dotfiles repo on a fresh macOS machine.
 set -euo pipefail
 
+# Create setup files
 DOTFILES="$(cd "$(dirname "$0")/.." && pwd)"
 ZSH_CUSTOM="${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}"
 
