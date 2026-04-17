@@ -3,5 +3,6 @@
 
 !.config/nvim/
 
-# per-machine git identity (email + signingkey)
+# per-machine overrides (not tracked)
 .gitconfig.local
+.zshrc.local
