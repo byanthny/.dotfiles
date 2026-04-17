@@ -27,13 +27,21 @@ echo 'export PATH="$HOME/some/bin:$PATH"' >> ~/.zshrc.local
 
 ## config files
 
-- .gitconfig - git
-- init.vim - neovim
-- .zshrc - oh my zsh
-- .claude/statusline.sh - claude code status line
-- vscode/settings.json, vscode/keybindings.json - vscode
-- other/Brewfile - Homebrew dump
-- iterm2_profile.json - iterm2
+```
+.
+├── .gitconfig                  git
+├── .zshrc                      oh my zsh
+├── .claude/
+│   └── statusline.sh           claude code status line
+├── .config/nvim/
+│   └── init.vim                neovim
+└── other/
+    ├── Brewfile                homebrew dump
+    ├── iterm2_profile.json     iterm2
+    └── vscode/
+        ├── settings.json       vscode settings
+        └── keybindings.json    vscode keybinds
+```
 
 ## todo
 
