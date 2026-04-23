@@ -1,6 +1,7 @@
 brew "autojump"
 brew "docker-compose"
 brew "git"
+brew "git-delta"
 brew "go"
 brew "neovim"
 brew "nvm"
