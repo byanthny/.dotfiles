@@ -1,7 +1,11 @@
 .DS_Store
-.config/*
 
+# ~/.config collects app-written state (tokens, caches, machine IDs).
+# Default-deny, then opt in per module below. Single-star pattern is important
+# so `!` exceptions can re-include subdirs — `.config/**` would trap them.
+.config/*
 !.config/nvim/
+!.config/zsh-custom/
 
 # per-machine overrides (not tracked)
 .gitconfig.local
