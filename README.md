@@ -50,6 +50,9 @@ echo 'export PATH="$HOME/some/bin:$PATH"' >> ~/.zshrc.local
 > so app-written state (tokens, caches, machine IDs) stays untracked. Adding a
 > new module? Append `!.config/<name>/` to `.gitignore`.
 
+> `other/vscode/` is **legacy** — kept for reference only. I don't use VS Code
+> day-to-day anymore, so it isn't stowed or wired into `setup.sh`.
+
 ## git workflow
 
 The shell is loaded with oh-my-zsh's `git` plugin (`gst`, `gco`, `gcb`, `gp`, `gd`,
@@ -106,3 +109,4 @@ between files in the pager, `q` quits.
 - [zen browser](https://zen-browser.app)
 - [figma](https://www.figma.com)
 - [iterm2](https://iterm2.com)
+- [neodisk](https://github.com/tkslucas/Neodisk) — read-only macOS disk space visualizer
