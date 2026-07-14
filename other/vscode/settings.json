@@ -1,61 +1,52 @@
 {
-  "workbench.iconTheme": "material-icon-theme",
-  "git.autofetch": true,
-  "editor.formatOnSave": true,
-  "editor.mouseWheelZoom": true,
+  // ── Editor ──────────────────────────────────────────────
   "editor.fontSize": 12,
-  "editor.suggestSelection": "first",
-  "git.confirmSync": false,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "files.exclude": {
-    "**/.classpath": true,
-    "**/.project": true,
-    "**/.settings": true,
-    "**/.factorypath": true
-  },
-  "editor.inlineSuggest.enabled": true,
-  "editor.formatOnPaste": true,
   "editor.fontFamily": "'Fira Code', monospace",
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "workbench.startupEditor": "none",
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true,
-    "source.sortImports": true
-  },
-  "workbench.colorTheme": "Tokyo Night",
   "editor.wordWrap": "on",
+  "editor.mouseWheelZoom": true,
+  "editor.suggestSelection": "first",
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+
+  // ── Formatting & code actions ───────────────────────────
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.sortImports": "explicit"
+  },
+
+  // ── JavaScript / TypeScript ─────────────────────────────
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  // ── Git ─────────────────────────────────────────────────
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.ignoreRebaseWarning": true,
+
+  // ── Workbench / appearance ──────────────────────────────
+  "workbench.colorTheme": "Tokyo Night",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "none",
+  "window.zoomLevel": 1,
+
+  // ── Language-specific ───────────────────────────────────
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
-  "cSpell.language": "en,lorem",
   "[dart]": {
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
     "editor.rulers": [80],
     "editor.selectionHighlight": false,
     "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "editor.suggestSelection": "first",
     "editor.tabCompletion": "onlySnippets",
-    "editor.wordBasedSuggestions": false
+    "editor.wordBasedSuggestions": "off"
   },
-  "github.copilot.enable": {
-    "*": true,
-    "yaml": false,
-    "plaintext": false,
-    "markdown": true
-  },
-  "editor.quickSuggestions": {
-    "strings": true
-  },
-  "git.ignoreRebaseWarning": true,
-  "vscord.status.problems.enabled": false,
-  "vscord.status.image.small.notInFile.text": "probably gave up...",
-  "vscord.status.image.small.idle.text": "Idling",
-  "vscord.status.idle.resetElapsedTime": true,
-  "vscord.status.details.text.notInFile": "no file",
-  "window.zoomLevel": 1
+
+  // ── Spell check (Code Spell Checker extension) ──────────
+  "cSpell.language": "en,lorem"
 }
