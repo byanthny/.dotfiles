@@ -2,7 +2,7 @@
 theme = dark:Builtin Dark,light:Builtin Dark
 background = 000000
 foreground = ededed
-background-opacity = 0.85
+background-opacity = 0.92
 background-blur-radius = 20
 font-size = 13
 window-padding-x = 12
