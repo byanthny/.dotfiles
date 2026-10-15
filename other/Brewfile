@@ -84,3 +84,23 @@ cask "codex"
 cask "mactex-no-gui"
 # Multi-platform VNC client and server
 cask "tigervnc"
+
+# trying out (2026-10). keep what sticks
+# Polyglot runtime manager (asdf rust clone)
+brew "mise"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# Modern, maintained replacement for ls
+brew "eza"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
+# Very fast implementation of tldr in Rust
+brew "tealdeer"
+# Audit git repos for secrets
+brew "gitleaks"
+# Command-line interface for 1Password
+cask "1password-cli"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
