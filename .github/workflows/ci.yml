@@ -12,7 +12,7 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: shellcheck
         run: find . -name '*.sh' -not -path './.git/*' -print0 | xargs -0 -r shellcheck --severity=error
       - name: bash syntax
@@ -21,6 +21,6 @@ jobs:
   brewfile:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: parse Brewfile
         run: brew bundle list --file=other/Brewfile --all

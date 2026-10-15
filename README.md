@@ -8,7 +8,11 @@ to be used with gnu stow
 - install git, clone this repo into `~/.dotfiles`
 - run `bash scripts/setup.sh`
 
-The script installs Homebrew, oh-my-zsh, the `zsh-autosuggestions` plugin, the Brewfile packages, and Claude Code, then stows everything into `$HOME`.
+the script installs homebrew, oh-my-zsh, the Brewfile packages (zsh-autosuggestions comes from there), and claude code, then stows everything into `$HOME` with `stow --no-folding`. no folding means `~/.config` stays a real folder, so app state never lands in the repo.
+
+### older machines
+
+machines set up before `--no-folding` have `~/.config` as a symlink into this repo. run `bash scripts/unfold-config.sh` once from `~/.dotfiles` (the main checkout, not a worktree). it lists the untracked app folders, moves them into a real `~/.config`, and restows. if the old `.oh-my-zsh/plugins/` clone is still there it stops and asks you to delete it first.
 
 ### per-machine overrides
 
@@ -38,12 +42,15 @@ echo 'export PATH="$HOME/some/bin:$PATH"' >> ~/.zshrc.local
 │   │   └── init.vim            neovim
 │   └── zsh-custom/             oh-my-zsh custom dir (auto-sourced *.zsh)
 │       └── git.zsh             g-prefix git aliases + ghelp cheat sheet
-└── other/
-    ├── Brewfile                homebrew dump
-    ├── iterm2_profile.json     iterm2
-    └── vscode/
-        ├── settings.json       vscode settings
-        └── keybindings.json    vscode keybinds
+├── other/
+│   ├── Brewfile                homebrew packages, incl. zsh-autosuggestions
+│   ├── iterm2_profile.json     iterm2
+│   └── vscode/
+│       ├── settings.json       vscode settings
+│       └── keybindings.json    vscode keybinds
+└── scripts/
+    ├── setup.sh                fresh mac setup, stows with --no-folding
+    └── unfold-config.sh        one-time fix for a symlinked ~/.config
 ```
 
 > `.config/` uses an allowlist in `.gitignore` — default-deny, opt in per module

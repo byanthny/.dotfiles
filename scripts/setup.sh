@@ -4,11 +4,12 @@ set -euo pipefail
 
 # Create setup files
 DOTFILES="$(cd "$(dirname "$0")/.." && pwd)"
-ZSH_CUSTOM="${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}"
 
 # 1. Homebrew
 if ! command -v brew >/dev/null 2>&1; then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  # a fresh install isn't on PATH in this shell yet
+  [ -x /opt/homebrew/bin/brew ] && eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
 # 2. oh-my-zsh
@@ -16,24 +17,20 @@ if [ ! -d "$HOME/.oh-my-zsh" ]; then
   RUNZSH=no CHSH=no sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 fi
 
-# 3. zsh-autosuggestions custom plugin
-if [ ! -d "$ZSH_CUSTOM/plugins/zsh-autosuggestions" ]; then
-  git clone https://github.com/zsh-users/zsh-autosuggestions "$ZSH_CUSTOM/plugins/zsh-autosuggestions"
-fi
-
-# 4. Brew packages (autojump, stow, git, go, neovim, etc.)
+# 3. Brew packages (autojump, stow, zsh-autosuggestions, git, go, neovim, etc.)
 brew bundle --file="$DOTFILES/other/Brewfile"
 
-# 5. Claude Code
+# 4. Claude Code
 if ! command -v claude >/dev/null 2>&1; then
   curl -fsSL https://claude.ai/install.sh | bash
 fi
 
-# 6. Symlink dotfiles into $HOME via GNU stow
+# 5. Symlink dotfiles into $HOME via GNU stow
 #    Remove any plain .zshrc (e.g. the oh-my-zsh template) so stow can place ours.
+#    --no-folding keeps ~/.config a real dir, so app state never lands in the repo.
 [ -f "$HOME/.zshrc" ] && [ ! -L "$HOME/.zshrc" ] && rm "$HOME/.zshrc"
 cd "$DOTFILES"
-stow --target="$HOME" --restow .
+stow --no-folding --target="$HOME" --restow .
 
 cat <<'EOF'
 
