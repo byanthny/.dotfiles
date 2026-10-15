@@ -78,7 +78,6 @@ plugins=(
 	web-search 
 	brew 
 	golang
-	zsh-autosuggestions	
 	1password
 	autojump
 	gitignore
@@ -92,6 +91,11 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+
+# zsh-autosuggestions comes from homebrew (other/Brewfile). skipped if missing
+brew_prefix="$(brew --prefix 2>/dev/null)"
+[ -f "$brew_prefix/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ] && source "$brew_prefix/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+unset brew_prefix
 
 # User configuration
 
@@ -116,7 +120,7 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
- alias zshconfig="sudo nvim ~/.zshrc"
+ alias zshconfig="nvim ~/.zshrc"
  alias jn="jupyter notebook"
  alias cddev="cd ~/Developer/"
 

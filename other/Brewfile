@@ -8,7 +8,8 @@ brew "nvm"
 brew "pnpm"
 brew "stow"
 brew "watchman"
-cask "docker"
+brew "zsh-autosuggestions"
+cask "docker-desktop"
 cask "iterm2"
 cask "zed"
 vscode "astro-build.astro-vscode"
@@ -46,3 +47,40 @@ vscode "streetsidesoftware.code-spell-checker"
 vscode "vintharas.learn-vim"
 vscode "visualstudioexptteam.vscodeintellicode"
 vscode "wakatime.vscode-wakatime"
+
+# installed on this mac on 2026-10-14 and not listed above. tony: keep the ones a fresh mac needs, delete the rest
+tap "hashicorp/tap"
+# Official Amazon AWS command-line interface
+brew "awscli"
+# Cross-platform make
+brew "cmake"
+# Dependency manager for Cocoa projects
+brew "cocoapods"
+# USB programmer
+brew "dfu-util"
+# Play, record, convert, and stream select audio and video codecs
+brew "ffmpeg"
+# GitHub command-line tool
+brew "gh"
+# Anti-bikeshedding Kotlin linter with built-in formatter
+brew "ktlint"
+# Postgres C API library
+brew "libpq"
+# Small build system for use with gyp or CMake
+brew "ninja"
+# Static analysis and lint tool, for (ba)sh scripts
+brew "shellcheck"
+# Generate your Xcode project from a spec file and your folder structure
+brew "xcodegen"
+# Feature-rich command-line audio/video downloader
+brew "yt-dlp"
+# Terraform
+brew "hashicorp/tap/terraform", trusted: true
+# Web browser focusing on privacy
+cask "brave-browser"
+# OpenAI's coding agent that runs in your terminal
+cask "codex"
+# Full TeX Live distribution without GUI applications
+cask "mactex-no-gui"
+# Multi-platform VNC client and server
+cask "tigervnc"

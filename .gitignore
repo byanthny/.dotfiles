@@ -10,6 +10,3 @@
 # per-machine overrides (not tracked)
 .gitconfig.local
 .zshrc.local
-
-# oh-my-zsh plugins are cloned per-machine
-.oh-my-zsh/plugins/
