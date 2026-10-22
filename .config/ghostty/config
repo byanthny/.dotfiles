@@ -1,0 +1,12 @@
+# ghostty, trying it next to iterm (2026-10)
+theme = dark:Builtin Dark,light:Builtin Dark
+background = 000000
+foreground = ededed
+background-opacity = 0.75
+background-blur-radius = 20
+font-family = Fira Code
+font-size = 11
+window-padding-x = 12
+window-padding-y = 10
+macos-option-as-alt = true
+cursor-style = bar
