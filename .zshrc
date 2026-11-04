@@ -79,6 +79,7 @@ plugins=(
 	brew 
 	golang
 	1password
+	autojump
 	gitignore
 	node
 	npm
@@ -95,10 +96,6 @@ source $ZSH/oh-my-zsh.sh
 brew_prefix="$(brew --prefix 2>/dev/null)"
 [ -f "$brew_prefix/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ] && source "$brew_prefix/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 unset brew_prefix
-
-# trying out (2026-10): zoxide replaces autojump (z <dir>), fzf gives ctrl-r history and ctrl-t files
-command -v zoxide >/dev/null 2>&1 && eval "$(zoxide init zsh)"
-command -v fzf >/dev/null 2>&1 && source <(fzf --zsh)
 
 # User configuration
 
@@ -129,8 +126,9 @@ command -v fzf >/dev/null 2>&1 && source <(fzf --zsh)
 
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# node (and any other runtime) through mise, which reads .nvmrc. replaces nvm
-command -v mise >/dev/null 2>&1 && eval "$(mise activate zsh)"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # pnpm
 export PNPM_HOME="$HOME/Library/pnpm"

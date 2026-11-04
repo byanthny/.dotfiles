@@ -6,7 +6,6 @@
 .config/*
 !.config/nvim/
 !.config/zsh-custom/
-!.config/ghostty/
 
 # per-machine overrides (not tracked)
 .gitconfig.local
