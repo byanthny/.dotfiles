@@ -35,6 +35,13 @@ fi
 cd "$DOTFILES"
 stow --target="$HOME" --restow .
 
+# 7. Share agent rules with Codex (~/.codex/AGENTS.md → ~/.config/agents/AGENTS.md)
+#    Leaves a real AGENTS.md alone.
+mkdir -p "$HOME/.codex"
+if [ ! -e "$HOME/.codex/AGENTS.md" ] || [ -L "$HOME/.codex/AGENTS.md" ]; then
+  ln -sfn "../.config/agents/AGENTS.md" "$HOME/.codex/AGENTS.md"
+fi
+
 cat <<'EOF'
 
 dotfiles setup complete — restart your shell
@@ -42,4 +49,5 @@ dotfiles setup complete — restart your shell
 Per-machine overrides (create if needed):
   ~/.gitconfig.local   — [user] email + signingkey
   ~/.zshrc.local       — machine-specific PATH exports / completions
+  ~/.claude/rules/*.md — machine-specific Claude Code rules
 EOF
