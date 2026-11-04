@@ -16,7 +16,7 @@ Optional files let you customize per machine without editing the tracked dotfile
 
 - `~/.gitconfig.local` — overrides `[user]` email / signingkey
 - `~/.zshrc.local` — extra PATH exports, completions, anything machine-specific
-- `~/.claude/rules/*.md` — machine- or work-specific Claude Code rules, loaded beside `.claude/CLAUDE.md` in every project
+- `~/.claude/rules/*.md` — machine- or work-specific Claude Code rules, loaded beside `.claude/CLAUDE.md` in every project. e.g. a personal mac's `rules/personal.md`: "on my own repos (github.com/byanthny), merge after my OK in chat; preview servers for checking a change are fine; hosting settings after an approved plan; GET only against production; never name a private project in a public repo"
 
 Each is picked up automatically if present, ignored if not. Create them only where needed:
 

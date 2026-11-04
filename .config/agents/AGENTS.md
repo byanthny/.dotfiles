@@ -1,6 +1,6 @@
 # Working with me
 
-Standing rules for every project and every coding agent.
+Standing rules for every project and every coding agent. Machine rules in `~/.claude/rules/*.md` refine them for the work or personal side.
 
 ## How to work
 - Answer in chat, short. A plan file is only the record.
@@ -12,7 +12,7 @@ Standing rules for every project and every coding agent.
 - A dense explanation gets one visual; answer "why" plainly first. No status boards.
 
 ## Git and PRs
-- Never merge, never offer to. I merge.
+- Never merge without my OK in chat.
 - No force push without asking, every time. Never `--no-verify`.
 - A ready PR is frozen: commits, body edits and merges are proposals until I say yes.
 - PR body: what changed and why, how it was tested, and a note for anything a reviewer would trip on. Keep it short; never hard-wrap.
@@ -22,7 +22,7 @@ Standing rules for every project and every coding agent.
 - No input guard that the next read or constraint already answers.
 
 ## Environment
-- No dev servers; I run them myself.
-- No local DB, env or key changes.
+- No dev servers, unless one is the way to check a change; stop it after.
+- No local DB, env or key changes. Hosting and firewall settings only after a plan I approved.
 - Check via the browser first; never enter credentials.
 - Helpers in a module's `utils/`, no `.util` files; follow the structured foreign key, never parse free text.
