@@ -12,12 +12,13 @@ The script installs Homebrew, oh-my-zsh, the `zsh-autosuggestions` plugin, the B
 
 ### per-machine overrides
 
-Two optional files let you customize per machine without editing the tracked dotfiles:
+Optional files let you customize per machine without editing the tracked dotfiles:
 
 - `~/.gitconfig.local` — overrides `[user]` email / signingkey
 - `~/.zshrc.local` — extra PATH exports, completions, anything machine-specific
+- `~/.claude/rules/*.md` — machine- or work-specific Claude Code rules, loaded beside `.claude/CLAUDE.md` in every project
 
-Both are sourced automatically if present, ignored if not. Create them only where needed:
+Each is picked up automatically if present, ignored if not. Create them only where needed:
 
 ```
 git config --file ~/.gitconfig.local user.email "you@example.com"
@@ -32,8 +33,11 @@ echo 'export PATH="$HOME/some/bin:$PATH"' >> ~/.zshrc.local
 ├── .gitconfig                  git + delta pager + custom aliases
 ├── .zshrc                      oh my zsh (ZSH_CUSTOM → .config/zsh-custom)
 ├── .claude/
+│   ├── CLAUDE.md               imports agents/AGENTS.md + claude-only rules
 │   └── statusline.sh           claude code status line
 ├── .config/
+│   ├── agents/
+│   │   └── AGENTS.md           standing rules for any coding agent (codex links here)
 │   ├── nvim/
 │   │   └── init.vim            neovim
 │   └── zsh-custom/             oh-my-zsh custom dir (auto-sourced *.zsh)
