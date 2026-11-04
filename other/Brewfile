@@ -92,3 +92,17 @@ brew "gitleaks"
 cask "1password-cli"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
+
+# later trial (2026-11): shell tools, by name, no aliases
+# Polyglot runtime manager (asdf rust clone)
+brew "mise"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# Modern, maintained replacement for ls
+brew "eza"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
+# Very fast implementation of tldr in Rust
+brew "tealdeer"
