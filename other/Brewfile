@@ -84,3 +84,11 @@ cask "codex"
 cask "mactex-no-gui"
 # Multi-platform VNC client and server
 cask "tigervnc"
+
+# trying out (2026-10): kept after the first round
+# Audit git repos for secrets
+brew "gitleaks"
+# Command-line interface for 1Password
+cask "1password-cli"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
