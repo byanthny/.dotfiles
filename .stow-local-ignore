@@ -1,11 +1,12 @@
 \.git
 \.gitignore
+\.gitmodules
+\.github
 
 ^/README.*
 
 /other
 /scripts
-
-\*.sh
+\.claude/worktrees
 
 \.DS_Store

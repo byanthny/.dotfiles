@@ -15,8 +15,12 @@
 	defaultBranch = main
 [commit]
 	gpgsign = true
+[tag]
+	gpgsign = true
 [gpg]
 	format = ssh
+[gpg "ssh"]
+	allowedSignersFile = ~/.ssh/allowed_signers
 
 [interactive]
 	diffFilter = delta --color-only
